@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Каталог товаров</h1>
-    <img src="{{ asset('pri.png') }}" alt="Логотип">
+    <img src="{{ asset('images/pribori.jpg') }}" alt="Логотип">   
     <div class="row">
         @foreach($products as $product)
             <div class="col-md-4 mb-4">
