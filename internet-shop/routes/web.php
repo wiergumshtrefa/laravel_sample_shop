@@ -11,3 +11,7 @@ Route::post('/add-to-cart/{id}', [ProductController::class, 'addToCart'])->name(
 Route::post('/checkout', [OrderController::class, 'store'])->name('checkout');
 Route::get('/feedback', [FeedbackController::class, 'show'])->name('feedback');
 Route::post('/feedback', [FeedbackController::class, 'send'])->name('feedback.send');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
